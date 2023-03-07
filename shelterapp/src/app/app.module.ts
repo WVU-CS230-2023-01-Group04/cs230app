@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterLayoutsComponent } from './router-layouts/router-layouts.component';
 import { NavigationComponent } from './navigation/navigation.component';
+
+import { LoginPageComponent } from './login-page/login-page.component';
+import { SignupPageComponent } from './signup-page/signup-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ShelterInfoPageComponent } from './shelter-info-page/shelter-info-page.component';
 import { NavbarComponent } from './main-page/navbar/navbar.component';
@@ -16,6 +19,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     AppComponent,
     RouterLayoutsComponent,
     NavigationComponent,
+    LoginPageComponent,
+    SignupPageComponent,
     MainPageComponent,
     ShelterInfoPageComponent,
     NavbarComponent,

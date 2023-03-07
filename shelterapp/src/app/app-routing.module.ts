@@ -2,10 +2,26 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ShelterInfoPageComponent } from './shelter-info-page/shelter-info-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { SignupPageComponent } from './signup-page/signup-page.component';
 
 const routes: Routes = [
-  {path: '', component: MainPageComponent},
-  {path: 'shelter-info', component: ShelterInfoPageComponent}
+  {
+    path: '',
+    component: MainPageComponent
+  },
+  {
+    path: 'login',
+    component: LoginPageComponent
+  },
+  {
+    path: 'signup',
+    component: SignupPageComponent
+  },
+  { 
+    path: 'shelter-info', 
+    component: ShelterInfoPageComponent
+}
 ];
 
 @NgModule({
