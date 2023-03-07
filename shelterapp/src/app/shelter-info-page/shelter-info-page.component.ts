@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./shelter-info-page.component.css']
 })
 export class ShelterInfoPageComponent {
-
+  title: string = "Park County Animal Shelter"
 }

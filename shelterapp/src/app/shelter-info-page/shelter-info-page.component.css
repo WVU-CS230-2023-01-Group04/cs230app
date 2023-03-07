@@ -1,0 +1,70 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+.container{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    max-width: 1000px;
+    border-right: 4px grey solid;
+    border-left: 4px grey solid;
+    padding: 0px;
+    padding-bottom: 40px;
+}
+
+.banner{
+    position: relative;
+    background-image: url(../../assets/animal-shelter.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    height: 425px;
+    overflow: hidden;
+    border-bottom: solid 4px grey;
+}
+
+.title{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    position: absolute;
+    font-size: 36px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    top: 0px;
+    left: 12px;
+    box-shadow: 0px 0px 100px 100px black;
+}
+
+.description{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 18px;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.button{
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    color: rgba(0,0,0,0);
+    font-size: 36px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all 0.3s;
+    padding: 20px;
+}
+
+.button:hover{
+    color: rgba(255,255,255,1);
+    box-shadow: inset 0px 50px 75px 50px black;
+}
+
+.pets{
+    background-image: url(../../assets/dog4.jpg);
+}
+
+.website{
+    background-image: url(../../assets/website-img.png);
+}
