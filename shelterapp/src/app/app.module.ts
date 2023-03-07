@@ -13,6 +13,7 @@ import { NavbarComponent } from './main-page/navbar/navbar.component';
 import { PetViewerComponent } from './main-page/pet-viewer/pet-viewer.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { PetInfoComponent } from './router-layouts/pet-info/pet-info.component';
+import { AppointmentComponent } from './appointment/appointment.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PetInfoComponent } from './router-layouts/pet-info/pet-info.component';
     ShelterInfoPageComponent,
     NavbarComponent,
     PetViewerComponent,
-    PetInfoComponent
+    PetInfoComponent,
+    AppointmentComponent
   ],
   imports: [
     BrowserModule,
