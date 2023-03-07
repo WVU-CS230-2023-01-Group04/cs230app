@@ -25,6 +25,19 @@
     left: 0px;
 }
 
+.info-button{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 0vh;
+}
+
+.info-circle{
+    background-color: transparent;
+    border-width: 0;
+}
+
 .left-button{
     width: 100px;
     height: 100px;
