@@ -1,5 +1,7 @@
-<div class="container">
-    <img class="current-image" [@accepted]="'viewing'"  *ngFor="let one of data" src="assets/{{ one }}">
+<div #container class="container">
+    <img class="current-image image" [@tinder]="imageOne" (@tinder.done)="reset()" src="assets/dog1.jpg">
+    <img class="hidden-image image" [@tinder]="imageTwo" (@tinder.done)="reset()" src="assets/dog2.jpg">
+    <img class="hidden-image image" [@tinder]="imageThree" (@tinder.done)="reset()" src="assets/dog3.jpg">
 
     <div class="buttons">
         <div class="left-button"  (click)="acceptPet()"></div>

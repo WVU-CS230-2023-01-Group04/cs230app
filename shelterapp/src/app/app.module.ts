@@ -9,6 +9,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { ShelterInfoPageComponent } from './shelter-info-page/shelter-info-page.component';
 import { NavbarComponent } from './main-page/navbar/navbar.component';
 import { PetViewerComponent } from './main-page/pet-viewer/pet-viewer.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { PetViewerComponent } from './main-page/pet-viewer/pet-viewer.component'
     MainPageComponent,
     ShelterInfoPageComponent,
     NavbarComponent,
-    PetViewerComponent
+    PetViewerComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
