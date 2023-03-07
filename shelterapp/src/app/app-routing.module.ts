@@ -5,7 +5,7 @@ import { PetInfoComponent } from './router-layouts/pet-info/pet-info.component';
 const routes: Routes = [
   {
   path:'petinfo',
-  component:PetInfoComponent;
+  component:PetInfoComponent
   }
 ];
 
