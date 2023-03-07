@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router'
+import { PetInfoComponent } from './router-layouts/pet-info/pet-info.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ShelterInfoPageComponent } from './shelter-info-page/shelter-info-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
@@ -21,7 +22,11 @@ const routes: Routes = [
   { 
     path: 'shelter-info', 
     component: ShelterInfoPageComponent
-}
+  },
+  {
+  path:'petinfo',
+  component:PetInfoComponent
+  }
 ];
 
 @NgModule({
