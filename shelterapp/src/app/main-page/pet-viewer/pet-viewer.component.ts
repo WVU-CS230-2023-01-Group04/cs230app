@@ -22,6 +22,12 @@ import { Component, ViewChild } from '@angular/core';
         opacity: 0,
         transform: "translateY(-500px)",
       })),
+      transition('denied => *',[
+        animate('0s')
+      ]),
+      transition('accepted => *',[
+        animate('0s')
+      ]),
       transition('* => *',[
         animate('0.4s')
       ]) 
