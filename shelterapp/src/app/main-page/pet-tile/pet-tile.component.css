@@ -1,0 +1,94 @@
+.container{
+    position: relative;
+    height: 450px;
+    width: 300px;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image{
+    height: 446px;
+    width: 296px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.overlay{
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0px;
+    left: -50%;
+    border-radius: 18px;
+    box-shadow: inset 0px 50px 100px 10px black;
+    transition: all 0.2s;
+}
+
+.text-container{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+}
+
+.name{
+    position: relative;
+    color: white;
+    font-size: 24px;
+    left: 10px;
+    margin-bottom: 0px;
+}
+
+.age{
+    position: relative;
+    color: white;
+    font-size: 16px;
+    left: 10px;
+    line-height: 8px;
+}
+
+.breed{
+    position: relative;
+    color: white;
+    font-size: 12px;
+    top: 8px;
+    right: 10px;
+    line-height: 0px;
+}
+
+.shots{
+    position: relative;
+    color: white;
+    font-size: 12px;
+    top: 8px;
+    right: 10px;
+    line-height: 0px;
+}
+
+.worms{
+    position: relative;
+    color: white;
+    font-size: 12px;
+    top: 8px;
+    right: 10px;
+    line-height: 0px;
+}
+
+.extra-info{
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.container:hover .overlay {
+    box-shadow: inset 0px 150px 150px 10px black;
+}
+
+.container:hover .extra-info{
+    opacity: 1;
+    left: 50%;
+}

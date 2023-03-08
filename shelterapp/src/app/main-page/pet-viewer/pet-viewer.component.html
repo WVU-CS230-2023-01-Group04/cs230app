@@ -1,10 +1,17 @@
 <div #container class="container">
-    <img class="current-image image" [@tinder]="imageOne" (@tinder.done)="reset()" src="assets/dog1.jpg">
-    <img class="hidden-image image" [@tinder]="imageTwo" (@tinder.done)="reset()" src="assets/dog2.jpg">
-    <img class="hidden-image image" [@tinder]="imageThree" (@tinder.done)="reset()" src="assets/dog3.jpg">
+
+    <app-pet-tile class="tile" [petData]="tileOneData" [@tinder]="imageOne" (@tinder.done)="reset()"></app-pet-tile>
+    <app-pet-tile class="tile" [petData]="tileTwoData" [@tinder]="imageTwo"></app-pet-tile>
+    <app-pet-tile class="tile" [petData]="tileThreeData" [@tinder]="imageThree"></app-pet-tile>
 
     <div class="buttons">
-        <div class="left-button"  (click)="acceptPet()"></div>
-        <div class="right-button" (click)="denyPet()"></div>
+        <div class="left-button button"  (click)="acceptPet()">
+            <div class="left-inner-border inner-border"></div>
+            <i class="bi bi-check2 icon"></i>
+        </div>
+        <div class="right-button button" (click)="denyPet()">
+            <div class="right-inner-border inner-border"></div>
+            <i class="bi bi-x-lg icon"></i>
+        </div>
     </div>
 </div>

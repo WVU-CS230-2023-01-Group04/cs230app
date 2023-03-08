@@ -1,0 +1,82 @@
+{
+    "numberOfPets":{
+        "dogs": 9,
+        "cats": 0
+    },
+    "pets":{
+        "dogs":[
+            {
+                "name": "poofesdjvnsrmans",
+                "age": "2 days",
+                "breed": "pomeranian",
+                "worms": "lots",
+                "shots": "completely infected",
+                "imgsrc": "../../assets/dog1.jpg"
+            },
+            {
+                "name": "wendy",
+                "age": "4 years",
+                "breed": "cavapoo",
+                "worms": "dewormed",
+                "shots": "fully vaccinated",
+                "imgsrc": "../../assets/dog2.jpg"
+            },
+            {
+                "name": "cookie",
+                "age": "3 years",
+                "breed": "cavapoo",
+                "worms": "dewormed",
+                "shots": "fully vaccinated",
+                "imgsrc": "../../assets/dog3.jpg"
+            },
+            {
+                "name": "rex",
+                "age": "5 years",
+                "breed": "pitbull",
+                "worms": "dewormed",
+                "shots": "fully vaccinated",
+                "imgsrc": "https://www.thesprucepets.com/thmb/a1BNst-_FzbZh3ylZvkt1Ff-q3s=/1988x0/filters:no_upscale():strip_icc()/AmericanBullysobakabarobaka-4ce0d4dc0e144dccadb5159b222e275e.jpg"
+            },
+            {
+                "name": "bubble",
+                "age": "6 months",
+                "breed": "beagle",
+                "worms": "dewormed",
+                "shots": "fully vaccinated",
+                "imgsrc": "https://images.squarespace-cdn.com/content/v1/5791ae1f1b631b5dbc729a03/1470721757101-LFV42H1A6QT95K4U7G8Z/shutterstock+puppy+with+red+ball_80773975.jpg?format=2500w"
+            },
+            {
+                "name": "moira",
+                "age": "3 years",
+                "breed": "german shepard",
+                "worms": "dewormed",
+                "shots": "partially vaccinated",
+                "imgsrc": "https://americaware.com/wp-content/uploads/2021/03/GermanShepherd_Blog.jpg"
+            },
+            {
+                "name": "nola",
+                "age": "2 years",
+                "breed": "golden reteiver",
+                "worms": "dewormed",
+                "shots": "fully vaccinated",
+                "imgsrc": "https://images.saymedia-content.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0MDk2MzYxNjM1OTgwODY2/what-you-should-know-about-owning-a-golden-retriever.jpg"
+            },
+            {
+                "name": "nobu",
+                "age": "6 years",
+                "breed": "french bulldog",
+                "worms": "dewormed",
+                "shots": "fully vaccinated",
+                "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/1/18/2008-07-28_Dog_at_Frolick_Field.jpg"
+            },
+            {
+                "name": "ronald",
+                "age": "2 years",
+                "breed": "siberian husky",
+                "worms": "dewormed",
+                "shots": "fully vaccinated",
+                "imgsrc": "https://a-z-animals.com/media/siberian-husky-1.jpg"
+            }
+        ]
+    }
+}

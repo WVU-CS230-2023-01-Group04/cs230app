@@ -1,5 +1,6 @@
-import { animate, style, state, transition, trigger } from '@angular/animations';
-import { Component, ViewChild } from '@angular/core';
+import { animate, style, state, transition, trigger, keyframes } from '@angular/animations';
+import { Component, ViewChild, OnInit } from '@angular/core';
+import animalData from '../../../assets/animals.json';
 
 @Component({
   selector: 'app-pet-viewer',
@@ -9,18 +10,19 @@ import { Component, ViewChild } from '@angular/core';
     trigger('tinder', [
       state('hidden', style({
         opacity: 0,
-        transform: "translateX(500px)",
+        transform: "translateX(200px) scale(0.1)",
       })),
       state('viewing', style({
         opacity: 1,
+        transform: "scale(1) translateX(-50%)"
       })),
       state('accepted', style({
         opacity: 0,
-        transform: "translateX(-500px)",
+        transform: "translateX(-400px) scale(0.1)",
       })),
       state('denied', style({
         opacity: 0,
-        transform: "translateY(-500px)",
+        transform: "translateY(-300px) translateX(-200px) scale(0.1)",
       })),
       transition('denied => *',[
         animate('0s')
@@ -28,18 +30,41 @@ import { Component, ViewChild } from '@angular/core';
       transition('accepted => *',[
         animate('0s')
       ]),
+      transition('viewing => accepted',[
+        animate('0.4s ease-in-out'),
+      ]),
+      transition('* => hidden',[
+        animate('0s')
+      ]),
       transition('* => *',[
-        animate('0.4s')
-      ]) 
+        animate('0.4s ease-in-out')
+      ])
     ])
   ]
 })
-export class PetViewerComponent {
-  data: string[] = ["dog1.jpg", "dog2.jpg", "dog3.jpg"];
+export class PetViewerComponent implements OnInit {
   imageOne: string = 'viewing';
   imageTwo: string = 'hidden';
   imageThree: string = 'hidden';
+  tileOneData: Object = {};
+  tileTwoData: Object = {};
+  tileThreeData: Object = {};
+  currentIndex: number = 1;
+
   @ViewChild("container") container!: HTMLElement;
+
+  ngOnInit(){
+    console.log("Initializing");
+    this.tileOneData = {
+      "name": animalData.pets.dogs[0].name,
+      "age": animalData.pets.dogs[0].age,
+      "breed": animalData.pets.dogs[0].breed,
+      "worms": animalData.pets.dogs[0].worms,
+      "shots": animalData.pets.dogs[0].shots,
+      "imgsrc": animalData.pets.dogs[0].imgsrc,
+      "state": "viewing"
+    };
+  }
 
   denyPet(){
     console.log("Denied Pet");
@@ -77,5 +102,18 @@ export class PetViewerComponent {
 
   reset(){
     console.log("Animation Done");
+    console.log("current index: " + this.currentIndex);
+    console.log("next dog: ");
+    console.log(animalData.pets.dogs[this.currentIndex]);
+    if(this.currentIndex-1 < animalData.numberOfPets.dogs){
+      if(this.imageOne == "hidden"){
+        this.tileOneData = animalData.pets.dogs[this.currentIndex];
+      }else if(this.imageTwo == "hidden"){
+        this.tileTwoData = animalData.pets.dogs[this.currentIndex];
+      }else if(this.imageThree == "hidden"){
+        this.tileThreeData = animalData.pets.dogs[this.currentIndex];
+      }
+      this.currentIndex++;
+    }
   }
 }
