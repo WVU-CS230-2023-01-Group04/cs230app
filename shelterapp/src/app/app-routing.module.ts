@@ -5,11 +5,17 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { ShelterInfoPageComponent } from './shelter-info-page/shelter-info-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
+import { AppointmentComponent } from './appointment/appointment.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
     path: '',
     component: MainPageComponent
+  },
+  { 
+    path:'appointments',
+    component:AppComponent
   },
   {
     path: 'login',
