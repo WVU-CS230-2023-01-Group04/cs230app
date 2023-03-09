@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   { 
     path:'appointments',
-    component:AppComponent
+    component:AppointmentComponent
   },
   {
     path: 'login',
